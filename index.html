@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <title>Emberlight</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Emberlight</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="file:///C:/Users/allab_000/Desktop/emberlightapp/EmberlightApp/about.html">About</a></li>
+        <li><a href="#">Why it's needed</a></li> 
+        <li><a href="#">Community Resources</a></li> 
+      </ul>
+    </div>
+    <br>
+    <br>
+<div class="container">
+  <div class="jumbotron">
+    <h1 font family: 'Roboto Condensed', sans-serif; font weight: 400; >E m b e r l i g h t</h1>
+    <br>
+    <p>Emberlight is an application that generates tiny self-affirmations when you need them most.</p> 
+    </div>
+  </div>
+</div>
+  <p>
+   <script type='text/javascript'
+  src='http://code.jquery.com/jquery-1.9.1.js'></script>
+<link rel="stylesheet" type="text/css"
+  href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+<script type='text/javascript'
+  src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){<!-- w ww .  jav  a  2  s  . c o m-->
+$(document).ready(function () {
+    $("#btn-id").button();
+    $("#btn-id").click(function () {
+        $(this).button('loading');
+        setTimeout(function () {
+            $("#btn-id").button('reset').addClass("btn-warning");
+        }, 2000);
+    });
+});
+});//]]>  
+</script>
+</head>
+<body>
+  <div class="container">
+  <h1>Click Me</h1>
+  <h2 id="compliment"></h2>
+  <button id="another">Another!</button>
+  function getRandomInt(min, max) {
+  return Math.round(Math.random() * (max - min)) + min;
+}
+
+var compliment = document.getElementById('compliment');
+var one = 0;
+var two = 0;
+
+var compliments = function () {
+  switch ( getRandomInt( 1, 4 ) ) {
+    case 1:
+      one = 'You have a wonderful';
+      switch ( getRandomInt( 1, 10 ) ) {
+        case 1:
+          two = 'smile';
+          break;
+        case 2:
+          two = 'laugh';
+          break;
+        case 3:
+          two = 'sense of humor';
+          break;
+        case 4:
+          two = 'hairstyle today!';
+          break;
+        case 5:
+          two = 'way with words';
+          break;
+        case 6:
+          two = 'voice';
+          break;
+        case 7:
+          two = 'spirit';
+          break;
+        case 8:
+          two = 'creative streak going, don't give up;
+          break;
+        case 9:
+          two = 'gift to give the world. I am glad you're here.;
+          break;
+        case 10:
+          two = 'talent for making the world a better place.';
+          break;
+      }
+      break;
+    case 2:
+      one = "You're an incredible";
+      switch ( getRandomInt( 1, 10 ) ) {
+        case 1:
+          two = 'artist';
+          break;
+        case 2:
+          two = 'programmer';
+          break;
+        case 3:
+          two = 'writer';
+          break;
+        case 4:
+          two = 'alt-tabber';
+          break;
+        case 5:
+          two = 'creator';
+          break;
+        case 6:
+          two = 'author';
+          break;
+        case 7:
+          two = 'person';
+          break;
+        case 8:
+          two = 'sarcasm laden writer';
+          break;
+        case 9:
+          two = 'leader';
+          break;
+        case 10:
+          two = 'musician';
+          break;
+      }
+      break;
+    case 3:
+      one = "You are a really strong";
+      switch ( getRandomInt( 1, 10 ) ) {
+        case 1:
+          two = 'artist';
+          break;
+        case 2:
+          two = 'writer';
+          break;
+        case 3:
+          two = 'author';
+          break;
+        case 4:
+          two = 'member of your team';
+          break;
+        case 5:
+          two = 'believer in diverse games';
+          break;
+        case 6:
+          two = 'person';
+          break;
+        case 7:
+          two = 'musician';
+          break;
+        case 8:
+          two = 'creator on the whole. Thank you for doing what you do.';
+          break;
+        case 9:
+          two = 'dialog starter';
+          break;
+        case 10:
+          two = 'programmer';
+          break;
+      }
+      break;
+    case 4:
+      one = "You really have a way with";
+      switch ( getRandomInt( 1, 10 ) ) {
+        case 1:
+          two = 'gender-neutral pronouns';
+          break;
+        case 2:
+          two = 'making people feel valued';
+          break;
+        case 3:
+          two = 'choosing the best reaction GIF';
+          break;
+        case 4:
+          two = 'words';
+          break;
+        case 5:
+          two = 'animals';
+          break;
+        case 6:
+          two = 'creating meaningful characters';
+          break;
+        case 7:
+          two = 'people';
+          break;
+        case 8:
+          two = 'understanding a situation';
+          break;
+        case 9:
+          two = 'solving complex code issues';
+          break;
+        case 10:
+          two = 'listening';
+          break;
+      }
+      break;
+  }
+  compliment.textContent = one + ' ' + two + '!';
+};
+
+compliments();
+
+var another = document.getElementById('another');
+another.onmousedown = function(){ compliments(); };
+
+</div>
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,100,500);
+
+body {
+  background: #000;
+  color: #15ec82;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 3em auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 15px 0 25px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+button {
+  background: #15ec82;
+  border-color: #15ec82;
+  border-top-color: darken(#15ec82, 8%);
+  border-bottom-color: darken(#15ec82, 14%);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
+  padding: .4em .9em;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  appearance: none;
+  box-sizing: border-box;
+
+  &:active {
+    border-width: 2px 1px 1px
+  }
+}
+
+  <p>
+    <div class="text-center">
+    <button id="btn-id" class="btn btn-large btn-warning btn-primary center-block" type="button"
+      data-loading-text="You will be okay."><span class="glyphicon glyphicon-fire"></span>Click Me</button></div>
+</div>
+  </p>
+  <br>
+  <br>
+    <div class="col-sm-4">
+      <div class="container">
+      <h3>What is Emberlight?</h3>
+      <p>Emberlight is an application which gives little self-affirmations. It doesn't bother you to log in. It's there when you need it.</p></div>
+      <br>
+      <br>
+      <blockquote>I'm austistic, and new to coding. If there's mistakes in my code, please feel free to point them out to me. I am unsure if I want to keep Emberlight web-based. This site was coded by me, with love, in Bootstrap</blockquote>
+    </div>
+</body>
+</html>
+
+
